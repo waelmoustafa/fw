@@ -7,12 +7,13 @@ import { MenuService } from '../services/menu.service';
   styleUrls: ['./title-bar.component.css']
 })
 export class TitleBarComponent implements OnInit {
-  // isVertical = true;
-  constructor(private menuService: MenuService) {
+  isVertical: boolean;
+  constructor(public menuService: MenuService) {
    }
 
   ngOnInit() {
-    // this.isVertical = this.menuService.isVertical;
+    this.isVertical = this.menuService.isVertical;
+    console.log(this.isVertical);
   }
 
 }

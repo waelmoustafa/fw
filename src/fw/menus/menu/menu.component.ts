@@ -11,8 +11,11 @@ export class MenuComponent implements OnInit {
 
   constructor(private menuService: MenuService) {}
   menuItems: Array<MenuItem>;
+  isVertical: boolean;
   ngOnInit() {
     this.menuItems = this.menuService.items;
+    this.isVertical = this.menuService.isVertical;
+    console.log(this.isVertical);
   }
 
 }

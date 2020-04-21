@@ -2,6 +2,7 @@
   <ul>
     <li *ngFor="let item of menuItems">
       <app-fw-menu-item [item] = "item"
+      [ngClass] = "{'vertical-menu' : isVertical }"
         ></app-fw-menu-item>
     </li>
   </ul>

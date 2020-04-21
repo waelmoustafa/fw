@@ -9,11 +9,12 @@ import { MenuService } from 'src/fw/services/menu.service';
 })
 export class MenuItemComponent implements OnInit {
   @Input() item: MenuItem;
+  isVertical: boolean;
   constructor(private menuService: MenuService) {
   }
 
   ngOnInit() {
-
+    this.isVertical = this.menuService.isVertical;
   }
 
 }

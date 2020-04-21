@@ -1,6 +1,6 @@
 
 <div *appScreenBelowLarge class="title-bar-small">
-    <span><svg class="bi bi-justify" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <span (click) = "menuService.toggleLeftSideMenu()"><svg class="bi bi-justify" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M2 12.5a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5zm0-3a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5zm0-3a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5zm0-3a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
       </svg></span>
     <div class="small-image-holder">
@@ -16,7 +16,7 @@
     <div class="menu-area" >
         <app-fw-top-bar>
         </app-fw-top-bar>
-        <app-fw-menu>
+        <app-fw-menu *ngIf="!isVertical">
         </app-fw-menu>
     </div>
 </div>
