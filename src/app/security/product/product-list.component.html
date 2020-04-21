@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h1>Product List</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-primary"
+      *ngIf="securityObject.canAddProduct">
+      Add New Product
+    </button>
+  </div>
+</div>
+
+<div>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Edit</th>
+        <th>Product Name</th>
+        <th>Introduction Date</th>
+        <th class="text-right">Price</th>
+        <th>URL</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr >
+        <td>
+          <a href="#" class="btn btn-primary">Edit
+            <i class="glyphicon glyphicon-pencil"></i>
+          </a>
+        </td>
+        <td>Product 1</td>
+        <td>1/1/2018</td>
+        <td class="text-right">55.5</td>
+        <td>http://product1.products.com</td>
+        <td>
+          <button class="btn btn-danger">Delete
+            <i class="glyphicon glyphicon-trash"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
